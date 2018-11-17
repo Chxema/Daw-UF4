@@ -21,6 +21,17 @@ public class FactorialC {
 		}
 	}
 
+	public static boolean primo (int valor) { 
+               boolean rest;
+	       int cont=0;
+	       for (int x=1;x<=valor;x++){
+		       if (valor%x==0){
+			       cont++;
+	               }
+	       }
+	       if (cont==2) return 1;
+	       return 0;
+	}   
 	
 	public static double factorial(int valor) {
 		double resultado=1;
